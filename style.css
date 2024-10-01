@@ -353,8 +353,8 @@ WATCH
 }
 
 @media screen and (min-width: 860px) {
-  .sermons {
-    grid-template-columns: repeat(3, 1fr);
+  .watch .sermons {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .sermons .sermon .text {
@@ -444,6 +444,12 @@ UPCOMING
   object-fit: cover;
 }
 
+.upcoming a{
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
 @media screen and (min-width: 576px) {
 }
 
@@ -473,4 +479,96 @@ END OF UPCOMING
 ===================
 ===================
 
+*/
+
+
+/* 
+===================
+===================
+SERVE
+===================
+===================
+
+*/
+
+.serve{
+    background: linear-gradient(rgba(255, 255, 255, 0.26), rgba(0, 0, 0, 0.233) ,rgba(0, 0, 0, 0.39)), url('./images/facade-of-aged-grand-cathedral-with-dome-on-river-shore-5273642.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    margin: 3rem 0;
+}
+
+
+.serve .content.centered-wrapper{
+    max-width: 600px;
+    position: relative;
+    background-color: white;
+    padding: 3rem;
+}
+
+.serve .content.centered-wrapper::before{
+    content: '';
+    width: 100%;
+    height: 10px;
+    background-color: var(--peach);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* 
+===================
+===================
+END OF SERVE
+===================
+===================
+
+*/
+
+
+/* 
+======================
+======================
+BLOG
+======================
+======================
+*/
+
+.blog{
+    margin: 3rem 0;
+}
+
+.blog .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog .card > div:nth-child(2){
+    font-size: 12px;
+}
+
+.blog .sub-title{
+    color: var(--dark-peach);
+    font-size: 1;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.blog .blog-title{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+/* 
+======================
+======================
+END OF BLOG
+======================
+======================
 */
