@@ -433,6 +433,16 @@ UPCOMING
   gap: 1rem;
 }
 
+.upcoming .left .detail button{
+    background: var(--primary);
+    padding: .5rem 1.5rem;
+    color: var(--peach);
+    display: block;
+    border: none;
+    border-radius: 7px;
+    margin: 1rem 0;
+}
+
 .upcoming .sermon .right {
   flex: 1;
   /* width: 50%; */
@@ -571,4 +581,112 @@ BLOG
 END OF BLOG
 ======================
 ======================
+*/
+
+
+/* 
+====================
+====================
+FOOTER
+====================
+====================
+*/
+
+footer{
+    background-color: var(--primary);
+    padding: 4rem 0;
+    margin-top: 3rem;
+}
+
+footer .centered-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    color: white;
+    justify-content: space-between;
+}
+
+footer .right{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+footer .left h3{
+    color: var(--peach);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer .left span{
+    font-size: 13px;
+}
+
+footer .connect i{
+    display: flex;
+    color: var(--primary);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--peach);
+    height: 20px;
+    width: 20px;
+    font-size: 10px;
+    border-radius: 50%;
+}
+
+footer .right .subscribe h3{
+    font-size: 2rem;
+}
+
+footer .right .subscribe input{
+    flex: 1;
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding: .5rem 1rem;
+    border: none;
+    background: transparent;
+    color: #fff;
+}
+
+.subscribe input:focus{
+    outline: none;
+}
+
+footer .right .subscribe div{
+    padding: 0;
+    display: flex;
+    border: 1px groove #bbb;
+    gap: 0;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    /* max-width: 400px; */
+}
+
+@media screen and (min-width: 576px) {
+    footer .centered-wrapper{
+        /* flex-direction: row; */
+    }
+}
+
+@media screen and (min-width: 910px) {
+    footer .centered-wrapper{
+        flex-direction: row;
+    }
+
+    footer .right{
+        flex-direction: row;
+    }
+  }
+
+
+
+/* 
+====================
+====================
+END OF FOOTER
+====================
+====================
 */
