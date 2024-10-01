@@ -1,0 +1,402 @@
+@import './variables.css';
+@import './responsiveness.css';
+
+*{
+    font-family: "Roboto Condensed", sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* 
+================
+================
+HEADER 
+================
+================
+*/
+
+header{
+    background: var(--black);
+    color: white;
+    /* padding: 1rem 0; */
+}
+
+header .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: var(--base-width);
+    max-width: var(--max-width);
+    margin: auto;
+    gap: 1rem;
+}
+
+header h3{
+    margin: 0;
+}
+
+header .left{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+header .left .main-menu{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    line-height: .5;
+}
+
+header .left .line{
+    height: 60px;
+    background-color: #bbb;
+    width: 1px ;
+}
+
+
+header .main-menu a{
+    color: #fff;
+    text-decoration: none;
+    transition: var(--link-transition);
+ }
+
+ header .main-menu a:hover{
+    color: var(--peach);
+ }
+ 
+
+
+
+/* 
+================
+================
+END OF HEADER 
+================
+================
+*/
+
+
+
+
+
+/* 
+================
+================
+HEADER 
+================
+================
+*/
+
+
+.hero{
+    background: url('./images/woman-in-orange-coat-with-black-and-brown-scarf-5418305.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    color: #fff;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+}
+
+.hero .content{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.hero .content p{
+    letter-spacing: 5px;
+}
+
+.hero h2{
+    font-size: 2rem;
+}
+
+
+.hero .quote{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    align-items: center;
+}
+
+.hero .quote div{
+    width: 50px;
+    height: 3px;
+    background-color: var(--peach);
+}
+
+@media screen and (min-width: 576px) {
+    .hero h2{
+        font-size: 3rem;
+    }
+
+    .hero .content{
+        text-align: start;
+    }
+
+    .hero .content{
+        align-items: start;
+        text-align: start;
+    }
+
+    .hero .quote{
+        flex-direction: row;
+    }
+}
+
+
+
+/* 
+================
+================
+END OF HERO 
+================
+================
+*/
+
+
+
+
+/* 
+================
+================
+RELEVANT 
+================
+================
+*/
+
+.identity{
+    gap: 1rem;
+    display: grid;
+}
+
+.identity .card{
+    background-color: var(--light-orange);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.identity .card .indicator {
+    width: 0;
+    height: 8px;
+    position: absolute;
+    background-color: var(--peach);
+    bottom: 0;
+    left: 0;
+    transition: width .5s ease;
+}
+
+.identity .img{
+    background: var(--peach);
+    padding: 0.5rem;
+    width: fit-content;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.identity .card:hover .indicator{
+    width: 100%;
+}
+
+
+@media screen and (min-width: 576px) {
+    .identity{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media screen and (min-width: 860px) {
+    .identity{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+
+
+
+/* 
+================
+================
+END OF RELEVANT 
+================
+================
+*/
+
+
+
+.gallery{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.gallery img:hover{
+    filter: grayscale(70%);
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 576px) {
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+    
+}
+
+@media screen and (min-width: 860px) {
+    .gallery{
+        grid-template-columns: 1fr 1.2fr 1fr;
+    }
+
+    .characters button{
+        transform: translateY(2rem);
+    }
+    
+    .characters .gallery .third{
+        transform: translateY(3rem);
+    }
+
+}
+
+
+
+/* 
+===================
+===================
+WATCH
+===================
+===================
+
+*/
+
+.watch{
+    padding: 5rem 0;
+    background-color: var(--gray);
+}
+
+.sermons{
+    display: grid;
+    gap: 1rem;
+}
+
+.sermons .sermon{
+    background: linear-gradient(rgba(255, 255, 255, 0.021), rgba(0, 0, 0, 0.295), black), url('./images/fashion-man-love-people-5875438.png');
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+    padding: 0 1rem;
+    margin-top: 3rem;
+}
+
+.sermons .sermon:nth-child(2){
+    background: linear-gradient(rgba(255, 255, 255, 0.021), rgba(0, 0, 0, 0.295), black), url('./images/a-statue-holding-a-holy-book-5613134.png');
+}
+
+.sermons .sermon:nth-child(3){
+    background: linear-gradient(rgba(255, 255, 255, 0.021), rgba(0, 0, 0, 0.295), black), url('./images/man-people-woman-connection-6276711.png');
+}
+
+.sermons .sermon:nth-child(4){
+    background: linear-gradient(rgba(255, 255, 255, 0.021), rgba(0, 0, 0, 0.295), black), url('./images/woman-in-blue-tank-top-and-man-in-red-shirt-painting-3795022.png');
+}
+
+.sermons .sermon h4{
+    margin-bottom: 1rem;
+}
+
+.sermons .sermon .text{
+    translate: 0 calc(100% + 4rem);
+    transition: translate .5s ease;
+}
+
+.sermons .sermon:hover .text{
+    translate: 0 50%;
+}
+
+
+@media screen and (min-width: 576px) {
+    .sermons{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sermons .sermon .text{
+        translate: 0 225px;
+        transition: translate .5s ease;
+    }
+
+    .sermons .sermon:hover .text{
+        translate: 0    2rem;
+    }
+    
+    
+}
+
+@media screen and (min-width: 860px) {
+    .sermons{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sermons .sermon .text{
+        translate: 0 200px;
+        transition: translate .5s ease;
+    }
+
+ 
+    
+
+}
+
+
+@media screen and (min-width: 1000px) {
+    .sermons{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .sermons .sermon .text{
+        translate: 0 200px;
+        transition: translate .5s ease;
+    }
+
+ 
+    
+
+}
+
+
+
+
+/* 
+===================
+===================
+END OF WATCH
+===================
+===================
+
+*/

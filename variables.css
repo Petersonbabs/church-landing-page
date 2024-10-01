@@ -1,0 +1,53 @@
+:root{
+    /* color */
+    --primary: #161722;
+    --black: #000;
+    --light-gray: #FFF5EB;
+    --light-orange: #FFF5EB;
+    --gray: #F5F2F0;
+    --peach: #FFD2A4;
+    --dark-peach: #f0ab66;
+    --linear-white-black: linear-gradient(#c2c2c204, #00000048);
+
+    --link-transition: color .5s;
+
+
+    /* box-model */
+    --max-width: 1140px;
+    --base-width: 90vw;
+}
+
+.primary-btn{
+    background-color: var(--peach);
+    border: none;
+    padding: .3rem .7rem;
+    border-radius: 8px;
+    font-weight: bold;
+    min-width: fit-content;
+    transition: background .3s ease;
+}
+
+.primary-btn:hover{
+    background: var(--dark-peach);
+}
+
+.centered-wrapper{
+    width: var(--base-width);
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+
+@media screen and (min-width :680px) {
+    .primary-btn{
+        padding: .5rem 1rem;
+    }
+    .title{
+        font-size: 2rem;
+    }
+}
