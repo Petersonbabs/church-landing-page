@@ -658,10 +658,12 @@ footer .right .subscribe input{
 footer .right .subscribe div{
     padding: 0;
     display: flex;
-    border: 1px groove #bbb;
-    gap: 0;
+    border: .5px groove #99999938;
+    gap: 1rem;
     border-radius: 8px;
+    align-items: center;
     margin-top: 1.5rem;
+    flex-wrap: wrap;
     /* max-width: 400px; */
 }
 
